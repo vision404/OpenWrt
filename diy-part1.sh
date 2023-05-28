@@ -16,3 +16,6 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+#修改内存为32MB
+sed -i 's/<0x50000 0x7b0000>/<0x50000 0x1fb0000>/g' target/linux/ramips/dts/mt7620a_phicomm_psg1218.dtsi
+sed -i 's/7872k/32448k/g' target/linux/ramips/image/mt7620.mk
