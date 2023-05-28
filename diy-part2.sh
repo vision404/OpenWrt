@@ -13,7 +13,7 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 #修改内存为32MB
-sed -i 's/<0xa0000 0x7b0000>/<0xa0000 0x1fb0000>/g' target/linux/ramips/dts/mt7620a_phicomm_psg1218.dtsi
+sed -i 's/<0x50000 0x7b0000>/<0x50000 0x1fb0000>/g' target/linux/ramips/dts/mt7620a_phicomm_psg1218.dtsi
 sed -i 's/7872k/32200k/g' target/linux/ramips/image/mt7620.mk
 #修改主题为argon
 sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile
