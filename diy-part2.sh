@@ -16,7 +16,8 @@
 sed -i 's/<0x50000 0x7b0000>/<0x50000 0x1fb0000>/g' target/linux/ramips/dts/mt7620a_phicomm_psg1218.dtsi
 sed -i 's/7872k/32448k/g' target/linux/ramips/image/mt7620.mk
 #修改主题为argon
-sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/bootstrap/design/g' feeds/luci/collections/luci/Makefile
+sed -i 's/Bootstrap/design/g' feeds/luci/collections/luci/Makefile
 #修改默认wifi名
 sed -i 's/OpenWrt/Vision/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 sed -i 's/Openwrt/Vision/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
